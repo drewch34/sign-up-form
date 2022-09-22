@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <video playsinline autoplay muted loop>
+                <source src="Pexels Videos 2109902.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="form-side-bx">
+            <img src="shoe-1530678.svg"/>
+            <div class="heading">
+                <h1>Sign Up Here</h1>
+                <h2>Blaze your own trails.</h2>
+            </div>
+            
+            <div class="form-bx">
+                <form>
+                    <input class="plcholder-text" type="email" name="email" id="email" placeholder="Email">
+                    <input class="plcholder-text" type="text" name="usern" id="usern" placeholder="Username">
+                    <input class="plcholder-text" type="password" name="pass1" id="pass1" placeholder="Password">
+                    <input class="plcholder-text" type="password" name="pass2" id="pass2" placeholder="Confirm Password">
+                </form>
+                <div id="message">
+                    <h3>Password requirements:</h3>
+                    <p id="letter" class="invalid">A lowercase letter</p>
+                    <p id="capital" class="invalid">An uppercase letter</p>
+                    <p id="number" class="invalid">A number</p>
+                    <p id="length" class="invalid">Minimum 8 characters</p>
+                    <p id="same" class="invalid">Passwords must match</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

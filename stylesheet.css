@@ -1,0 +1,89 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.plcholder-text {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: medium;
+}
+
+.page {
+    display: flex;
+    position: absolute;
+}
+
+.container {
+    height: 55vw;
+    min-height: 50vh;
+    display: flex;
+    position: relative;
+}
+
+video {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-side-bx {
+    display: flex;
+    background-color:rgb(247, 246, 222, 0.30);
+    justify-content: space-between;
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+    padding: 3%;
+}
+
+p {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    margin: 1%;
+}
+
+#message {
+    margin-top: 3%;
+}
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    /* left: -35px; */
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    /* left: -35px; */
+    content: "✖";
+}
